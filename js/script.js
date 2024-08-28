@@ -16,5 +16,9 @@ function mul(){
 function div(){
     var fnum = parseInt(document.getElementById('num1').value)
     var snum = parseInt(document.getElementById('num2').value)
-    alert(fnum/snum)
+    if(snum===0){
+        alert('division by 0 is not possible')
+    }else{
+        alert(fnum/snum)
+    }
 }
